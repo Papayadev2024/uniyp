@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./output.css" rel="stylesheet">
+    
+  
+</head>
+
+
+<body class="font-sans bg-gray-100">
+
+  <!-- Encabezado superpuesto -->
+  <header class=" text-white p-3 fixed w-full z-10 mt-16 h-20">
+    <div class="items-center inline-block"> <!-- Agregado el contenedor flex y items-center -->
+      <img src="../resource/img/logomundoweb.svg" class="h-full"> <!-- Agregada la clase h-full para que la imagen ocupe la altura completa del div -->
+    </div>
+    <div class="inline-block items-center "> <!-- Agregado el contenedor flex y items-center -->
+      <ul class="flex space-x-4"> <!-- Agregada la clase flex y space-x-4 para alinear los elementos de la lista horizontalmente -->
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Proyectos</li>
+        <li>Contacto</li>
+      </ul>
+    </div>
+  </header>
+  
+
+  <!-- Contenido principal -->
+  <div class=" flex h-screen w-screen bg-fondo justify-center items-center">
+
+      <!-- Columna 1 (60%) -->
+      <div class="w-3/5  p-4 text-left">
+          
+          <h1 class="text-6xl text-white w-3/4 font-bold">
+            ¡Mundo Web,<br> nuestra pasión,
+            tu transformación Digital!
+          </h1>
+          <p class="text-lg text-white w-8/12 font-normal mt-6">Somos una empresa de desarrollo web joven y dinámica, especializada en transformar ideas en 
+            soluciones digitales excepcionales. En Mundo Web, no solo construimos sitios web y aplicativos, 
+            sino que creamos experiencias digitales que impulsan el éxito de nuestros clientes.</p>
+
+          <a type="button" class="text-lg bg-fondoboton text-white px-2 py-3 rounded-full w-40 inline-block text-center mt-7" >
+            Servicios <img src="../resource/img/iconbutton.svg" alt="Flecha a la derecha" class="h-10 w-10 ml-2 inline-block"></a>  
+      </div>
+
+      <!-- Columna 2 (40%) -->
+      <div class="w-2/5  p-4">
+         
+          <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+          </h1>
+          
+      </div>
+
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-gray-200 p-4 h-16 -mt-16">
+      <p class="text-sm text-gray-600">© 2024 Tu Compañía. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
