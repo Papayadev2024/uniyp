@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link href="./output.css" rel="stylesheet" />
+    <script src="../resource/js/jquery-3.7.1.min.js"></script>
+    <script src="../resource/js/styles.js" rel=" javascript"></script>
+    <link href="../resource/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="min-w-96">
+    <div class="navigation z-10">
+        <button class="hamburger" id="position" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
+        <nav class="menu-list">
+            <ul>
+                <li><a>Categoría 1</a></li>
+                <li><a>Categoría 2</a></li>
+                <li><a>Categoría 3</a></li>
+                <li><a>Categoría 4</a></li>
+                <li><a>Categoría 5</a></li>
+                <li><a>Categoría 6</a></li>
+                <li><a>Categoría 7</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <header>
+        <div class="header_top bg-rosalasdonas w-full h-12 text-white flex flex-row items-center justify-center"> Producto | Categoría <span class="ml-1 font-bold">  más vendida </span> <img class="w-6 ml-2" src="../resource/img_donas/spa.svg"></div>    
+        <div class="header_middle grid grid-cols-12 h-24 md:border-b">
+            <div class="block_left col-span-3 flex items-center justify-center ">
+               <div class="md:hidden">
+                    <button class="hamburger" onclick="show()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </button>
+                </div> 
+                <div class='max-w-md mx-auto hidden md:block  bg-rosasuave py-1 px-3 rounded-full '>
+                    <div class="relative flex items-center w-full h-12 rounded-xl   overflow-hidden">
+                        <div class="grid place-items-center w-12 h-10  text-white bg-rosalasdonas rounded-full ">
+                            <svg  class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                
+                        <input
+                        class="peer h-full w-full outline-none text-base  pl-2 text-rosalasdonas bg-rosasuave placeholder-rosaplaceholder"
+                        type="text"
+                        id="search"
+                        placeholder="Buscar.." /> 
+                    </div>
+                </div>
+            </div>
+            <div class="block_center col-span-6 flex items-center justify-center ">
+                <img class="w-48" src="../resource/img_donas/logo_lasdonas.svg"/>
+            </div>
+            <div class="block_right col-span-3 flex flex-row items-center justify-center pl-2 ">
+                
+                <div class="bg-rosalasdonas rounded-full p-2 mr-6 hidden md:block">
+                    <img class="w-6" src="../resource/img_donas/user.svg"/>
+               </div>
+                
+                <div class="bg-rosalasdonas rounded-full p-2">
+                     <img class="w-6" src="../resource/img_donas/cart.svg"/>
+                </div>
+
+               
+            </div>
+        </div>
+        <div class="header_bottom  md:px-[5%] lg:px-[10%] h-12 py-3 hidden md:block">
+            <div class="text-colorgris font-medium text-base">
+                <nav>
+                    <ul class="menu flex flex-row justify-between">
+                        <li><a>Categoría 1</a></li>
+                        <li><a>Categoría 2</a></li>
+                        <li><a>Categoría 3</a></li>
+                        <li><a>Categoría 4</a></li>
+                        <li><a>Categoría 5</a></li>
+                        <li><a>Categoría 6</a></li>
+                        <li><a>Categoría 7</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="banner_section2 lg:banner_sec h-128 lg:h-200 text-white text-center flex flex-col justify-center items-center space-y-4 p-5 lg:px-[20%]">
+            <h1 class="text-4xl md:text-6xl font-bold">Éxitos Florales: Las Creaciones que Conquistan Corazones en Cada Pétalo</h1>
+            <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            <button type="button"   class="bg-rosalasdonas px-6 py-3 rounded-lg ">Comprar ahora</button>
+        </div>    
+    </section>
+
+    <section>
+       <div class="px-[5%] py-16 space-y-10"> 
+            <div class="text-center  space-y-2">
+                <h3 class="text-lg font-bold text-rosalasdonas">Lo Mejor de Nosotros</h3>
+                <h2 class="text-4xl md:text-5xl font-bold text-black">Descubre Nuestros Productos Más Vendidos</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+                <div class="space-y-2 max-w-96 m-auto">
+                    <img class="w-96 h-96 object-contain" src="../resource/img_donas/productolasdonas.png"/>
+                    <h2 class="text-xl font-bold text-black">Ramo Primaveral</h2>
+                    <p class="text-base font-normal text-black">Estallido de colores primaverales. Ideal para alegrar el día.</p>
+                    <div class="flex font-medium"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
+                    <button type="button"   class="w-full  py-3 rounded-lg shadow-md font-medium flex items-center justify-center">Agregar a mi bolsa <img class="ml-2" src="../resource/img_donas/addcart.svg"/></input>
+                </div>
+
+                <div class="space-y-2 max-w-96 m-auto">
+                    <img class="w-96 h-96 object-contain" src="../resource/img_donas/productolasdonas.png"/>
+                    <h2 class="text-xl font-bold text-black">Ramo Primaveral</h2>
+                    <p class="text-base font-normal text-black">Estallido de colores primaverales. Ideal para alegrar el día.</p>
+                    <div class="flex font-medium"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
+                    <button type="button"   class="w-full  py-3 rounded-lg shadow-md font-medium flex items-center justify-center">Agregar a mi bolsa <img class="ml-2" src="../resource/img_donas/addcart.svg"/></input>
+                </div>
+
+                <div class="space-y-2 max-w-96 m-auto">
+                    <img class="w-96 h-96 object-contain" src="../resource/img_donas/productolasdonas.png"/>
+                    <h2 class="text-xl font-bold text-black">Ramo Primaveral</h2>
+                    <p class="text-base font-normal text-black">Estallido de colores primaverales. Ideal para alegrar el día.</p>
+                    <div class="flex font-medium"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
+                    <button type="button"   class="w-full  py-3 rounded-lg shadow-md font-medium flex items-center justify-center">Agregar a mi bolsa <img class="ml-2" src="../resource/img_donas/addcart.svg"/></input>
+                </div>
+
+                <div class="space-y-2 max-w-96 m-auto">
+                    <img class="w-96 h-96 object-contain" src="../resource/img_donas/productolasdonas.png"/>
+                    <h2 class="text-xl font-bold text-black">Ramo Primaveral</h2>
+                    <p class="text-base font-normal text-black">Estallido de colores primaverales. Ideal para alegrar el día.</p>
+                    <div class="flex font-medium"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
+                    <button type="button"   class="w-full  py-3 rounded-lg shadow-md font-medium flex items-center justify-center">Agregar a mi bolsa <img class="ml-2" src="../resource/img_donas/addcart.svg"/></input>
+                </div>
+                
+            </div>
+       </div> 
+    </section>
+
+    <section>
+
+               <div class="grid grid-cols-1 sm:grid-cols-2 px-[5%] lg:px-[7%] gap-4 pt-10">
+                   
+                    <div class="w-full sm:row-span-2">
+                        <div class="block_fondo_first h-96  sm:h-full flex flex-col justify-end items-start pb-6 pl-6 ">
+                            <h3 class="text-base font-medium text-white">Categoría</h3>
+                            <h2 class="text-3xl font-bold text-white">Aniversario</h2>
+                        </div>    
+                    </div>
+                    <div class="w-full ">
+                        <div class="block_fondo_second h-52 sm:h-52 md:h-64 lg:h-72 xl:h-96  flex flex-col justify-end items-start pb-6 pl-6">
+                            <h3 class="text-base font-medium text-white">Categoría</h3>
+                            <h2 class="text-3xl font-bold text-white">Agradecimiento</h2>
+                        </div>  
+                    </div>
+                    <div class="w-full "> 
+                        <div class="block_fondo_third h-52 sm:h-52 md:h-64 lg:h-72 xl:h-96 flex flex-col justify-end items-start pb-6 pl-6">
+                            <h3 class="text-base font-medium text-white">Categoría</h3>
+                            <h2 class="text-3xl font-bold text-white">Para Ella</h2>
+                        </div> 
+                    </div>
+                </div>   
+                <div class="grid grid-cols-1 px-[5%] lg:px-[7%] pb-10 mt-4">
+
+                    <div class="w-full ">
+                        <div class="block_fondo_four h-52 sm:h-52 md:h-64 lg:h-72 xl:h-96  flex flex-col justify-end items-start pb-6 pl-6">
+                            <h3 class="text-base font-medium text-white">Categoría</h3>
+                            <h2 class="text-3xl font-bold text-white">Nacimiento</h2>
+                        </div>  
+                    </div>
+
+                </div>
+   
+    </section>
+
+    <section>
+        <div class="px-[5%] py-8 space-y-10"> 
+             <div class="text-left  space-y-2">
+                 <h3 class="text-lg font-bold text-rosalasdonas">Nuestros clientes</h3>
+                 <h2 class="text-4xl md:text-5xl font-bold text-black">Testimonios en Flor</h2>
+                 <p class="text-base font-normal text-black">Clientes felices, historias encantadoras. Descubre por qué florecemos juntos.</p>
+             </div> 
+
+             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6">
+
+                    <div class="space-y-4 w-full m-auto p-6 bg-griscard rounded-xl">
+
+                        <div class="flex flex-row justify-end items-end">
+                            <div class="w-[80%]">
+                                <h2 class="text-xl font-bold text-black">Alejandra Neyra</h2>
+                                <p class="text-base font-normal text-black">Comprado el 20 de julio de 2024</p>
+                            </div>
+                            <div class="w-[20%]">
+                                <img class="w-14 rounded-full  object-contain" src="../resource/img_donas/usericon.png"/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <ul class="flex flex-row space-x-1">
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/mediaestrella.svg"> </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <p class="text-base font-normal text-black">Vestibulum faucibus elit urna. Vestibulum sollicitudin molestie enim, 
+                                non aliquet massa rutrum in. Quisque rhoncus fringilla dictum. Sed interdum ligula ligula. Maecenas pharetra 
+                                ligula malesuada risus faucibus rhoncus. Curabitur ut lorem odio. Vestibulum sit amet malesuada nulla. Integer 
+                                a consequat nulla.</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="space-y-4 w-full m-auto p-6 bg-griscard rounded-xl">
+
+                        <div class="flex flex-row justify-end items-end">
+                            <div class="w-[80%]">
+                                <h2 class="text-xl font-bold text-black">Alejandra Neyra</h2>
+                                <p class="text-base font-normal text-black">Comprado el 20 de julio de 2024</p>
+                            </div>
+                            <div class="w-[20%]">
+                                <img class="w-14 rounded-full  object-contain" src="../resource/img_donas/usericon.png"/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <ul class="flex flex-row space-x-1">
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/mediaestrella.svg"> </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <p class="text-base font-normal text-black">Vestibulum faucibus elit urna. Vestibulum sollicitudin molestie enim, 
+                                non aliquet massa rutrum in. Quisque rhoncus fringilla dictum. Sed interdum ligula ligula. Maecenas pharetra 
+                                ligula malesuada risus faucibus rhoncus. Curabitur ut lorem odio. Vestibulum sit amet malesuada nulla. Integer 
+                                a consequat nulla.</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="space-y-4 w-full m-auto p-6 bg-griscard rounded-xl">
+
+                        <div class="flex flex-row justify-end items-end">
+                            <div class="w-[80%]">
+                                <h2 class="text-xl font-bold text-black">Alejandra Neyra</h2>
+                                <p class="text-base font-normal text-black">Comprado el 20 de julio de 2024</p>
+                            </div>
+                            <div class="w-[20%]">
+                                <img class="w-14 rounded-full  object-contain" src="../resource/img_donas/usericon.png"/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <ul class="flex flex-row space-x-1">
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/estrellacompleta.svg"> </li>
+                                <li><img  class="rounded-full w-6" src="../resource/img_donas/mediaestrella.svg"> </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <p class="text-base font-normal text-black">Vestibulum faucibus elit urna. Vestibulum sollicitudin molestie enim, 
+                                non aliquet massa rutrum in. Quisque rhoncus fringilla dictum. Sed interdum ligula ligula. Maecenas pharetra 
+                                ligula malesuada risus faucibus rhoncus. Curabitur ut lorem odio. Vestibulum sit amet malesuada nulla. Integer 
+                                a consequat nulla.</p>
+                        </div>
+
+                    </div>
+            </div>  
+        </div> 
+
+    </section>
+ 
+     
+    <section>
+        <div class="grid grid-cols-1  py-10 mt-4">
+
+            <div class="w-full ">
+                <div class="block_video h-200   flex flex-col justify-end items-start pb-[3%] pl-[5%] ">
+                    <div class=" flex justify-center items-center m-auto">
+                        <img  class="rounded-full w-20" src="../resource/img_donas/buttonplay.svg">
+                    </div>
+                  
+                    <div class="w-[60%] md:w-[40%] lg:w-[30%] space-y-4  md:absolute ">
+                        <h2 class="text-5xl font-bold text-white">Descubre la Magia Floral en Movimiento</h2>
+                        <p class="text-lg font-normal text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="px-[2%] md:px-[25%] pt-8 pb-12"> 
+             <div class="text-center  space-y-5 flex flex-col items-center ">
+                 <h3 class="text-lg font-bold text-rosalasdonas -mb-4">Redes sociales</h3>
+                 <h2 class="text-5xl font-bold text-black">Únete a nuestra comunidad floral</h2>
+                 <p class="text-base font-normal text-black">Descubre la frescura de cada pétalo siguiéndonos. 
+                    Síguenos para estar al tanto de nuestras últimas creaciones y ofertas exclusivas. 
+                    Te esperamos para compartir juntos la belleza floral.</p>
+                 <button type="button"   class="w-52  py-3 rounded-lg shadow-md font-medium flex items-center justify-center bg-rosalasdonas text-white   ">Regálanos un like<img class="ml-2" src="../resource/img_donas/favorite.svg"/></input>
+             </div> 
+        </div> 
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 ">
+
+            <div class="relative group">
+                <img class="w-full" src="../resource/img_donas/ig1.png" />
+                <div class="opacity-0 group-hover:opacity-60 duration-300 absolute inset-x-0 top-0 flex justify-center items-center h-full bg-rosalasdonas "></div>
+                <img class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 top-1/2 left-1/2 flex justify-center items-center translate-x-[-50%] translate-y-[-50%]" src="../resource/img_donas/instagram.svg">
+            </div>
+
+            <div class="relative group">
+                <img class="w-full" src="../resource/img_donas/ig2.png" />
+                <div class="opacity-0 group-hover:opacity-60 duration-300 absolute inset-x-0 top-0 flex justify-center items-center h-full bg-rosalasdonas "></div>
+                <img class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 top-1/2 left-1/2 flex justify-center items-center translate-x-[-50%] translate-y-[-50%]" src="../resource/img_donas/instagram.svg">
+            </div>
+
+            <div class="relative group">
+                <img class="w-full" src="../resource/img_donas/ig3.png" />
+                <div class="opacity-0 group-hover:opacity-60 duration-300 absolute inset-x-0 top-0 flex justify-center items-center h-full bg-rosalasdonas "></div>
+                <img class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 top-1/2 left-1/2 flex justify-center items-center translate-x-[-50%] translate-y-[-50%]" src="../resource/img_donas/instagram.svg">
+            </div>
+
+            <div class="relative group">
+                <img class="w-full" src="../resource/img_donas/ig4.png" />
+                <div class="opacity-0 group-hover:opacity-60 duration-300 absolute inset-x-0 top-0 flex justify-center items-center h-full bg-rosalasdonas "></div>
+                <img class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 top-1/2 left-1/2 flex justify-center items-center translate-x-[-50%] translate-y-[-50%]" src="../resource/img_donas/instagram.svg">
+            </div>
+
+        </div>
+        
+    </section>
+
+    <footer class="bg-rosalasdonas p-[10%] sm:p-[7%] md:p-[5%] lg:p-[5%]">
+        <div class="footer_main pb-10 border-b">
+            <div class="grid grid-cols-1 sm:grid-cols-12 md:grid-cols-12 gap-7">
+                <div class="flex flex-col justify-center items-center  sm:col-span-12 md:col-span-12 lg:col-span-4 lg:justify-start lg:items-start"><img class="md:w-64 lg:max-w-64" src="../resource/img_donas/logotipoblanco.svg"></div>
+           
+                <div class="text-white sm:col-span-3 lg:col-span-2">
+                    <nav> 
+                        <h2 class="text-lg font-medium">Sobre nosotros</h2>
+                        <ul class="text-base font-normal">
+                            <li>Pellentesque</li>
+                            <li>Suspendisse</li>
+                            <li>Curabitur</li>
+                            <li>Etiam fringilla</li>
+                        </ul> 
+                    </nav>
+                </div>
+
+                <div class="text-white sm:col-span-3 lg:col-span-2">
+                    <nav> 
+                        <h2 class="text-lg font-medium">Categorías</h2>
+                        <ul class="text-base font-normal">
+                            <li>Pellentesque</li>
+                            <li>Suspendisse</li>
+                            <li>Curabitur</li>
+                            <li>Etiam fringilla</li>
+                        </ul> 
+                    </nav>
+                </div>
+
+
+                <div class="text-white sm:col-span-3 lg:col-span-2">
+                    <nav> 
+                        <h2 class="text-lg font-medium">¿Necesitas ayuda para comprar?</h2>
+                        <ul class="text-base font-normal">
+                            <li>Pellentesque</li>
+                            <li>Suspendisse</li>
+                            <li>Curabitur</li>
+                            <li>Etiam fringilla</li>
+                        </ul> 
+                    </nav>
+                </div>
+
+
+                <div class="text-white sm:col-span-3 lg:col-span-2">
+                    <nav> 
+                        <h2 class="text-lg font-medium">Políticas</h2>
+                        <ul class="text-base font-normal">
+                            <li>Pellentesque</li>
+                            <li>Suspendisse</li>
+                        </ul> 
+                    </nav>
+                </div>
+
+            </div>
+        </div>   
+
+        <div class="footer_bottom ">
+
+                <div class="py-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 ">
+                       <div class="lg:col-span-7">
+                            <p class="text-base font-normal text-white">© 2024 Las Doñas. Todos los derechos reservados. Las imágenes, textos y diseños 
+                                florales son propiedad exclusiva deLas Doñas. 
+                                Prohibida su reproducción total o parcial sin autorización previa por escrito.</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-center lg:justify-end lg:col-span-5">
+                            <img  src="../resource/img_donas/pagos.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row ">
+                    <img class="pr-3" src="../resource/img_donas/reclamaciones.svg" /><p class="text-base font-normal text-white">Libro de reclamaciones</p>
+                </div>
+
+        </div>
+
+
+    </footer>
+
+  </body>
+</html>

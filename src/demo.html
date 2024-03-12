@@ -1,0 +1,39 @@
+<div class="relative">
+    <select id="selectocasion" multiple data-hs-select='{ /* ... tu configuración existente ... */ }' class="hidden">
+      <option value="Cumpleaños">Cumpleaños</option>
+      <option value="Velorio">Velorio</option>
+      <option value="Graduación">Graduación</option>
+      <option value="Aniversario">Aniversario</option>
+    </select>
+  
+    <div class="absolute top-1/2 end-3 -translate-y-1/2">
+      <svg class="flex-shrink-0 size-3.5 text-gray-500 dark:text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5"/><path d="m7 9 5-5 5 5"/></svg>
+    </div>
+  
+    <!-- Área para mostrar etiquetas seleccionadas -->
+    <div id="etiquetas-seleccionadas" class="mt-4"></div>
+  </div>
+  
+  <script>
+        let $select = $('#selectocasion');
+            $select.on('change', () => {
+             let selecteds = [];
+
+            // Buscamos los option seleccionados
+            $select.children(':selected').each((idx, el) => {
+                // Obtenemos los atributos que necesitamos
+                selecteds.push({
+                id: el.id,
+                value: el.value
+                });
+            });
+  
+        //
+        console.log(selecteds);
+        });
+
+    $(document).ready(function() {
+    
+    });
+  </script>
+  

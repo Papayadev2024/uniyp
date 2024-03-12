@@ -8,6 +8,8 @@
             @apply bg-red-500 grid place-content-center rounded-lg
             text-white font-bold border-2 border-red-600 text-4xl;
         }
+
+         
 }
 
 
@@ -17,4 +19,83 @@
             background-color: red;
             height: 50px;
             }
+
+            .imagenMundoWeb{
+                background-image: url('../resource/img/imgmundoweb.jpg');  
+            }
+
+            .fondoservicios{
+                background-image: url('../resource/img/fondo2.png');  
+            }
+
+            /* .fondonepage{
+                background-image: url('../resource/img/fondoonepage.png');  
+                object-fit: cover;
+                background-position: right;
+                background-size: 100%;
+                background-repeat:no-repeat;
+            } */
+
+            .textura{
+                background-image: url('../resource/img/texturaonepage.svg');  
+                object-fit: cover;
+                background-position: left;
+                background-size: 100%;
+                background-repeat:no-repeat;
+                
+            }
+
+            .fondolanding{
+                background-image: url('../resource/img/fondolanding.png');  
+                object-fit: cover;
+                background-position: top ;
+                background-size: 100%;
+                background-repeat:no-repeat;
+            }
+
+             /* CSS para Las Donas        */
+
+
+             .block_fondo_first{
+                background-image: url('../resource/img_donas/fondolasdonas.png');  
+                object-fit: cover;
+                background-position: center ;
+                background-size: cover;
+                background-repeat:no-repeat;
+             }
+
+             .block_fondo_second{
+                background-image: url('../resource/img_donas/banner2.png');  
+                object-fit: cover;
+                background-position: center ;
+                background-size: cover;
+                background-repeat:no-repeat;
+             }
+
+             .block_fondo_third{
+                background-image: url('../resource/img_donas/banner3.png');  
+                object-fit: cover;
+                background-position: center ;
+                background-size: cover;
+                background-repeat:no-repeat;
+             }
+
+             .block_fondo_four{
+                background-image: url('../resource/img_donas/banner4home.png');  
+                object-fit: cover;
+                background-position: center ;
+                background-size: cover;
+                background-repeat:no-repeat;
+             }
+
+             .block_video{
+                background-image: url('../resource/img_donas/bannervideo.png');  
+                object-fit: cover;
+                background-position: center ;
+                background-size: cover;
+                background-repeat:no-repeat;
+             }
+
+       
+
   }

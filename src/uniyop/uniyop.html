@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-asap">
+  <div class="h-28 flex justify-center items-center">
+    <img src="images/logo_cabecera.png" alt="">
+  </div>
+  
+  <nav class="drop-shadow-lg">
+    <div class="h-20 bg-[#3D8BF2] flex justify-center space-x-6 items-center text-white text-2xl">
+        <a href="">Home</a>
+        <a href="">Se parte de nosotros</a>
+        <a href="">Blog y Eventos</a>
+        <a href="" class="bg-[#204088] px-4 py-2 rounded-lg">Quiero apoyar</a>
+    </div>
+  </nav>
+
+  <section class="bg-[#4E82C2]">
+    <div class="container  grid grid-cols-5 py-32">
+        
+        <div class="flex justify-center items-center col-span-2">
+            
+            <div class="">
+                <h1 class="text-6xl pb-8 text-white font-bold">
+                    Capacitaciones y Charlas para la Prevención de la Violencia Doméstica
+                </h1>
+                <p class="pb-8 text-white text-2xl">
+                    Participa en nuestras capacitaciones y charlas para convertirte en un líder en la lucha contra la violencia doméstica. Aprende a identificar señales de alerta, brindar apoyo y promover relaciones saludables en tu comunidad.
+                </p>
+                <a href="" class="bg-[#F6D84D] rounded-full px-10 py-2 mt-10">
+                    Entrar
+                </a>
+            </div>
+
+        </div>
+        
+        <div class="col-span-3 relative -top-10" id="scene">
+            <img src="images/header2.png" alt="" data-depth="0.5">
+            <img src="images/header1.png" alt="" data-depth="0.6">
+            <img src="images/header3.png" alt="" data-depth="0.3">
+            <img src="images/header4.png" alt="" data-depth="0.9">
+        </div>
+        
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script>
+
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+
+	</script>
+
+</body>
+</html>
