@@ -120,9 +120,10 @@
                 <p class="text-2xl  font-bold text-black pb-6">Paso 1: Selecciona un horario</p>
                 <div class="flex flex-row justify-between  gap-3 md:gap-7 lg:gap-5 xl:gap-7 pb-8">
                     
-                    <div class="flex flex-col justify-center items-center text-rosalasdonas text-center w-1/3 border-rosalasdonas border-2 p-3 rounded-xl"> 
+                    <div class=" flex flex-col justify-center items-center text-rosalasdonas text-center w-1/3 border-rosalasdonas border-2 p-3 rounded-xl focus:ring-2 focus:ring-indigo-500"> 
                         <p class="text-lg font-bold">Hoy</p> <p class="text-sm font-normal">No disponible</p> 
                     </div>
+                    
                     
                     <div class="flex flex-col justify-center items-center text-rosalasdonas text-center w-1/3 border-rosalasdonas border-2 p-3 rounded-xl"> 
                         <p class="text-lg font-bold">Mañana</p> <p class="text-sm font-normal">07 de Enero de 2024 </p> 
@@ -188,8 +189,8 @@
 
                 <p class="text-2xl  font-bold text-black pb-2">Paso 3: Personalizar</p>
                 <p class="text-lg  font-normal text-black pb-4">Personaliza con una foto: Con foto</p>
-                <div class="text-white font-semibold pb-6">
-                    <button type="button"  class="bg-rosalasdonas px-6 py-3 rounded-full mr-5">Sin foto</button>  
+                <div class="text-white font-semibold pb-6 space-x-6">
+                    <button type="button"  class="bg-rosalasdonas px-6 py-3 rounded-full ">Sin foto</button>  
                     <button type="button"  class="bg-rosalasdonas px-6 py-3 rounded-full ">Con foto</button>   
                 </div>
 
@@ -212,46 +213,221 @@
 
                 
                
-                <ul class="grid w-full gap-6 md:grid-cols-3">
-                    <li> 
+                <ul class="grid w-full gap-6 grid-cols-1 md:grid-cols-3">
+                    <li class="m-auto"> 
                         <label for="react-option" class="inline-flex items-center justify-between w-full  bg-white  rounded-lg cursor-pointer  ">                           
                             <div class="block relative" >
                                 <input  type="checkbox" id="react-option" value="" class="peer absolute top-3 left-3 w-5 h-5 accent-rosalasdonas" required="">
-                                <img class="size-full" src="../resource/img_donas/complemento.png" />      
+                                <img class="size-full w-48 h-56" src="../resource/img_donas/complemento.png" />      
                             </div>
                         </label>
+                        <h2 class="text-base font-normal text-black text-center">Globo de cumpleaños</h2>
+                        <div class="flex font-medium justify-center"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
                     </li>
 
-                    <li> 
+                    <li class="m-auto"> 
                         <label for="react-option2" class="inline-flex items-center justify-between w-full  bg-white  rounded-lg cursor-pointer  ">                           
                             <div class="block relative" >
                                 <input  type="checkbox" id="react-option2" value="" class="peer absolute top-3 left-3 w-5 h-5 accent-rosalasdonas" >
-                                <img class="size-full" src="../resource/img_donas/complemento2.png" />      
+                                <img class="size-full w-48 h-56" src="../resource/img_donas/complemento2.png" />      
                             </div>
                         </label>
+                        <h2 class="text-base font-normal text-black text-center">Torta de Chocolate</h2>
+                        <div class="flex font-medium justify-center"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
                     </li>
 
-                    <li> 
-                        <label for="react-option3" class="inline-flex items-center justify-between w-full  bg-white  rounded-lg cursor-pointer  ">                           
-                            <div class="block relative" >
-                                <input  type="checkbox" id="react-option3" value="" class="peer absolute top-3 left-3 w-5 h-5 accent-rosalasdonas">
-                                <img class="size-full" src="../resource/img_donas/complemento2.png" />      
-                            </div>
-                        </label>
-                    </li>s
+                    <li>
+                        <div class="flex flex-col justify-center items-center text-rosalasdonas text-center w-48 m-auto h-56 border-rosalasdonas border-2 p-3 rounded-xl ">
+                            
+                                <div class="grid grid-cols-1 gap-3 xl:gap-5">
+                                    <div class="flex flex-col justify-center items-center"> 
+                                        <img src="../resource/img_donas/regalo.svg"/>            
+                                    </div>  
+                                    
+                                    <div class="flex flex-col justify-center items-center"> 
+                                        <p class="text-base font-semibold">Ver globos y más</p>   
+                                    </div>
+        
+                                </div>
+                        </div>
+                    </li>
                    
                 </ul>
-
-
 
             </div>
            
          </div>   
 
+</section>
+
+<section>
+    <div class="px-[5%] pt-16 pb-0 space-y-10"> 
+         <div class="text-left  space-y-4">
+             
+            <div class="text-white font-semibold pb-6 md:space-x-6 space-y-3">
+                <button type="button"  class="bg-rosalasdonas px-6 py-3 rounded-full ">Descripción del producto</button>  
+                <button type="button"  class="bg-rosalasdonas px-6 py-3 rounded-full ">Políticas de envío</button>   
+                <button type="button"  class="bg-rosalasdonas px-6 py-3 rounded-full ">Políticas de sustitución</button>   
+            </div>
+
+             <h2 class="text-4xl md:text-5xl font-bold text-black">Suspendisse potenti x12 rosas</h2>
+
+             <p class="text-base font-normal text-black">Duis elementum magna dui, vulputate accumsan nibh fringilla in. Integer eget metus ligula. 
+                Suspendisse nisl metus, facilisis sed metus at, pellentesque suscipit neque. 
+                Nam sagittis ante id euismod molestie. Vivamus tempus pharetra erat, consequat pellentesque sem maximus vel. </p>
+
+             <p class="text-lg font-semibold">Especificaciones del arreglo</p>   
+
+             <ul>
+                <li>Curabitur et mi a tellus aliquam commodo.</li>
+                <li>Cras sed erat lacus.</li>
+                <li>Praesent hendrerit pharetra.</li>
+                <li>Nullam eleifend.</li>
+             </ul>
+
+             <p class="text-lg font-semibold">Especificaciones de mini foto</p>   
+
+             <ul>
+                <li>Curabitur et mi a tellus aliquam commodo.</li>
+                <li>Cras sed erat lacus.</li>
+             </ul>
+
+             <p class="text-lg font-semibold">Tip Las Donas</p>   
+
+             <ul>
+                <p class="text-base font-normal text-black">Duis elementum magna dui, vulputate accumsan nibh fringilla in. Integer eget metus ligula. 
+                    Suspendisse nisl metus, facilisis sed metus at, pellentesque suscipit neque.</p>
+             </ul>
+         </div> 
+    </div> 
 
 </section>
 
+<section>
+    <div class="px-[5%] py-16 pb-20 space-y-10"> 
+         <div class="text-center  space-y-2">
+             <h3 class="text-lg font-bold text-rosalasdonas">Más productos</h3>
+             <h2 class="text-4xl md:text-5xl font-bold text-black">También te puede interesar</h2>
+         </div>
 
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+             <div class="space-y-2 max-w-96 m-auto">
+                 <img class="w-96 h-96 object-contain" src="../resource/img_donas/productolasdonas.png"/>
+                 <h2 class="text-xl font-bold text-black">Ramo Primaveral</h2>
+                 <p class="text-base font-normal text-black">Estallido de colores primaverales. Ideal para alegrar el día.</p>
+                 <div class="flex font-medium"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
+                 <button type="button"   class="w-full  py-3 rounded-lg shadow-md font-medium flex items-center justify-center">Agregar a mi bolsa <img class="ml-2" src="../resource/img_donas/addcart.svg"/></input>
+             </div>
+
+             <div class="space-y-2 max-w-96 m-auto">
+                 <img class="w-96 h-96 object-contain" src="../resource/img_donas/productolasdonas.png"/>
+                 <h2 class="text-xl font-bold text-black">Ramo Primaveral</h2>
+                 <p class="text-base font-normal text-black">Estallido de colores primaverales. Ideal para alegrar el día.</p>
+                 <div class="flex font-medium"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
+                 <button type="button"   class="w-full  py-3 rounded-lg shadow-md font-medium flex items-center justify-center">Agregar a mi bolsa <img class="ml-2" src="../resource/img_donas/addcart.svg"/></input>
+             </div>
+
+             <div class="space-y-2 max-w-96 m-auto">
+                 <img class="w-96 h-96 object-contain" src="../resource/img_donas/productolasdonas.png"/>
+                 <h2 class="text-xl font-bold text-black">Ramo Primaveral</h2>
+                 <p class="text-base font-normal text-black">Estallido de colores primaverales. Ideal para alegrar el día.</p>
+                 <div class="flex font-medium"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
+                 <button type="button"   class="w-full  py-3 rounded-lg shadow-md font-medium flex items-center justify-center">Agregar a mi bolsa <img class="ml-2" src="../resource/img_donas/addcart.svg"/></input>
+             </div>
+
+             <div class="space-y-2 max-w-96 m-auto">
+                 <img class="w-96 h-96 object-contain" src="../resource/img_donas/productolasdonas.png"/>
+                 <h2 class="text-xl font-bold text-black">Ramo Primaveral</h2>
+                 <p class="text-base font-normal text-black">Estallido de colores primaverales. Ideal para alegrar el día.</p>
+                 <div class="flex font-medium"><p>S/ <span>75.00</span></p><p class="px-2">-</p><p>S/ <span>120.00</span></p></div>
+                 <button type="button"   class="w-full  py-3 rounded-lg shadow-md font-medium flex items-center justify-center">Agregar a mi bolsa <img class="ml-2" src="../resource/img_donas/addcart.svg"/></input>
+             </div>
+             
+         </div>
+    </div> 
+ </section>
+
+
+ <footer class="bg-rosalasdonas p-[10%] sm:p-[7%] md:p-[5%] lg:p-[5%] ">
+    <div class="footer_main pb-10 border-b">
+        <div class="grid grid-cols-1 sm:grid-cols-12 md:grid-cols-12 gap-7">
+            <div class="flex flex-col justify-center items-center  sm:col-span-12 md:col-span-12 lg:col-span-4 lg:justify-start lg:items-start"><img class="md:w-64 lg:max-w-64" src="../resource/img_donas/logotipoblanco.svg"></div>
+       
+            <div class="text-white sm:col-span-3 lg:col-span-2">
+                <nav> 
+                    <h2 class="text-lg font-medium">Sobre nosotros</h2>
+                    <ul class="text-base font-normal">
+                        <li>Pellentesque</li>
+                        <li>Suspendisse</li>
+                        <li>Curabitur</li>
+                        <li>Etiam fringilla</li>
+                    </ul> 
+                </nav>
+            </div>
+
+            <div class="text-white sm:col-span-3 lg:col-span-2">
+                <nav> 
+                    <h2 class="text-lg font-medium">Categorías</h2>
+                    <ul class="text-base font-normal">
+                        <li>Pellentesque</li>
+                        <li>Suspendisse</li>
+                        <li>Curabitur</li>
+                        <li>Etiam fringilla</li>
+                    </ul> 
+                </nav>
+            </div>
+
+
+            <div class="text-white sm:col-span-3 lg:col-span-2">
+                <nav> 
+                    <h2 class="text-lg font-medium">¿Necesitas ayuda para comprar?</h2>
+                    <ul class="text-base font-normal">
+                        <li>Pellentesque</li>
+                        <li>Suspendisse</li>
+                        <li>Curabitur</li>
+                        <li>Etiam fringilla</li>
+                    </ul> 
+                </nav>
+            </div>
+
+
+            <div class="text-white sm:col-span-3 lg:col-span-2">
+                <nav> 
+                    <h2 class="text-lg font-medium">Políticas</h2>
+                    <ul class="text-base font-normal">
+                        <li>Pellentesque</li>
+                        <li>Suspendisse</li>
+                    </ul> 
+                </nav>
+            </div>
+
+        </div>
+    </div>   
+
+    <div class="footer_bottom ">
+
+            <div class="py-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 ">
+                   <div class="lg:col-span-7">
+                        <p class="text-base font-normal text-white">© 2024 Las Doñas. Todos los derechos reservados. Las imágenes, textos y diseños 
+                            florales son propiedad exclusiva deLas Doñas. 
+                            Prohibida su reproducción total o parcial sin autorización previa por escrito.</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-center lg:justify-end lg:col-span-5">
+                        <img  src="../resource/img_donas/pagos.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row ">
+                <img class="pr-3" src="../resource/img_donas/reclamaciones.svg" /><p class="text-base font-normal text-white">Libro de reclamaciones</p>
+            </div>
+
+    </div>
+
+
+</footer>
 
 
 </body>

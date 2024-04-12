@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mundoweb</title>
+    
+        <link href="./output.css" rel="stylesheet" />
+        <script src="../resource/js/jquery-3.7.1.min.js"></script>
+        <script src="../resource/js/styles.js" rel=" javascript"></script>
+        <link href="../resource/css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    </head>
+<body>
+
+    <div class="navigation z-10">
+        <button class="hamburger" id="position" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
+        <nav class="menu-list">
+            <ul>
+                <li><a>Categoría 1</a></li>
+                <li><a>Categoría 2</a></li>
+                <li><a>Categoría 3</a></li>
+                <li><a>Categoría 4</a></li>
+                <li><a>Categoría 5</a></li>
+                <li><a>Categoría 6</a></li>
+                <li><a>Categoría 7</a></li>
+            </ul>
+        </nav>
+    </div>
+   
+ <header class="px-[5%]">
+        <div class="header_top"></div>   
+
+        <div class="header_middle grid grid-cols-12 h-32 md:h-48">
+            <div class="block_left col-span-7 md:col-span-3 flex items-center justify-start ">
+
+                <img class="w-48" src="../resource/img_mundoweb/logomundo.svg"/>
+
+            </div>
+
+            <div class="block_center col-span-1 md:col-span-6 py-10 flex flex-col justify-center items-center ">
+               <div class="hidden md:block">
+                    <div class="text-colorgris font-medium text-base ">
+                        <nav>
+                            <ul class="menu flex flex-row justify-center items-center space-x-5 lg:space-x-10">
+                                <li><a>Inicio</a></li>
+                                <li><a>Servicios</a></li>
+                                <li><a>Proyectos</a></li>
+                                <li><a>Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block_right col-span-4  md:col-span-3  flex flex-row items-center justify-end pl-2 ">
+                
+                <div class="md:hidden">
+                    <button class="hamburger" onclick="show()">
+                        <div id="bar1" class="bar2"></div>
+                        <div id="bar2" class="bar2"></div>
+                        <div id="bar3" class="bar2"></div>
+                    </button>
+                </div> 
+               
+            
+                <div class="group hidden md:block">
+                    <a type="button" class=" float-right text-base lg:text-lg bg-azulmw text-white px-2 lg:px-4 py-3 rounded-full w-auto inline-block " >
+                        Quiero mi web<img src="../resource/img_mundoweb/flechaderechaarriba.svg" alt="Flecha a la derecha" class="h-10 w-10 ml-2 inline-block group-hover:rotate-45 transition-all  duration-500"></a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="header_bottom "></div>
+
+    </header>
+
+
+
+    <section>
+        <div class="grid grid-flow-col auto-cols-max items-center justify-center my-10">
+            <ul class="flex -space-x-6 col-span-12 md:col-span-4">
+              <li class="rounded-full"><img  class="rounded-full w-12" src="../resource/img/persona1.png"> </li>
+              <li class="rounded-full"><img  class="rounded-full w-12" src="../resource/img/persona2.png"> </li>
+              <li class="rounded-full"><img  class="rounded-full w-12" src="../resource/img/persona3.png"> </li>
+              <li class="rounded-full"><img  class="rounded-full w-12" src="../resource/img/persona4.png"> </li>
+              <li class="rounded-full"><img  class="rounded-full w-12" src="../resource/img/persona5.png"> </li>
+            </ul>
+            <p class="xs:col-span-12 md:col-span-8 ml-4 text-azulmw text-base items-end"><span class="font-bold text-2xl">100+ </span> CLIENTES DIGITALIZADOS</p>
+        </div>   
+
+    </section>
+
+
+    <section>
+        <div class="px-[5%] py-16 space-y-12"> 
+             <div class="text-center  space-y-10 flex flex-col justify-center items-center">
+                 <h2 class="text-4xl md:text-6xl font-bold text-textonegro"><span>¡Mundo Web, nuestra pasión</span>,<br> tu transformación Digital!</h2>
+                 <p class="text-lg md:text-xl font-medium text-textomw md:w-[72%]"> Somos una empresa de desarrollo web joven y dinámica, especializada en transformar ideas en soluciones digitales excepcionales. 
+                    En Mundo Web, no solo construimos sitios web y aplicativos, sino que creamos experiencias digitales que impulsan el éxito 
+                    de nuestros clientes.</p>
+
+                <div class="group">
+                        <a type="button" class="text-base lg:text-lg bg-azulmw text-white px-2 lg:px-4 py-3 rounded-full w-auto inline-block " >
+                            Haz que tu Negocio Despegue<img src="../resource/img_mundoweb/flechaderechaarriba.svg" alt="Flecha a la derecha" class="h-10 w-10 ml-2 inline-block group-hover:rotate-45 transition-all  duration-500"></a> 
+                </div>
+             </div>
+        </div>
+
+
+        
+    </section>
+
+</body>
+</html>

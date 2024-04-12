@@ -33,6 +33,12 @@ module.exports = {
         griscard: '#f8f8f8',
         colorgris: '#7c7c7c',
         verdelasdonas: '#447279',
+
+        //colores de mundoweb
+
+        azulmw: '#3f56fb',
+        textomw: '#3f4654',
+        textonegro: '#111827',
       },
      
       height: {
